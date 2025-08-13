@@ -15480,7 +15480,7 @@ MonoBehaviour:
   promptMessage: "F\uD0A4\uB97C \uB20C\uB7EC \uC0AC\uB2E4\uB9AC \uD0C0\uAE30"
   itemData: {fileID: 0}
   objectName: Ladder
-  description: Ladder
+  description: Ladder~
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
