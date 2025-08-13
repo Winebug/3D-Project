@@ -42,17 +42,17 @@ public class PlayerEffects : MonoBehaviour
     // 스피드 부스트 효과를 처리하는 코루틴
     private IEnumerator SpeedBoostCoroutine(float duration, float speedMultiplier)
     {
-        // 1. 원래 속도 저장
+        // 
         float originalSpeed = playerController.moveSpeed;
 
-        // 2. 속도 증가
+        // 
         playerController.moveSpeed *= speedMultiplier;
         Debug.Log($"속도 증가! 현재 속도: {playerController.moveSpeed}");
 
-        // 3. 지정된 시간(duration)만큼 대기
+        // 
         yield return new WaitForSeconds(duration);
 
-        // 4. 원래 속도로 복구
+        // 원래 속도로 복구
         playerController.moveSpeed = originalSpeed;
         Debug.Log($"효과 종료! 속도 복구: {playerController.moveSpeed}");
     }

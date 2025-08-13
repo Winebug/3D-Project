@@ -34,14 +34,14 @@ public class PlayerInteraction : MonoBehaviour
 
                 if (Input.GetKeyDown(KeyCode.F))
                 {
-                    // 1. 아이템 줍기 로직
+                    // 아이템 줍기 로직
                     if (interactable.itemData != null)
                     {
                         playerEffects.UseItem(interactable.itemData);
                         Destroy(interactable.gameObject);
                         interactionText.text = "";
                     }
-                    // 2. 사다리 타기 로직
+                    // 사다리 타기 로직
                     else if (interactable.isLadder)
                     {
                         // PlayerController에게 "사다리 타기 모드 ON" 신호를 보냄

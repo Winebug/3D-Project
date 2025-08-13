@@ -66,7 +66,6 @@ public class PlayerController : MonoBehaviour
         CameraLook();
     }
 
-    // 일반 상태일 때의 움직임
     void Move()
     {
         _rigidbody.useGravity = true; // 일반 상태에서는 중력 항상 켜기
@@ -106,8 +105,6 @@ public class PlayerController : MonoBehaviour
         launchCommand = new Vector3(_rigidbody.velocity.x, launchVelocity, _rigidbody.velocity.z);
     }
 
-    // --- 입력 처리 함수들 (Input System) ---
-
     public void OnMove(InputAction.CallbackContext context)
     {
         if (context.phase == InputActionPhase.Performed)
@@ -145,7 +142,6 @@ public class PlayerController : MonoBehaviour
 
     bool IsGrounded()
     {
-        // ... (기존 땅 체크 로직과 동일)
         Ray[] rays = new Ray[4]
         {
             new Ray(transform.position + (transform.forward * 0.2f), Vector3.down),
