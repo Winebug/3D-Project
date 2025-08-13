@@ -1,6 +1,6 @@
 # **Game Title**
 그저 평범할줄알았지만 평범하지않았던 3D 과제건에 대하여  
-![프로젝트 실행 화면](https://raw.githubusercontent.com/사용자이름/저장소이름/main/Assets/Img/2025-08-13%2011%2055%2048.jpg)
+![프로젝트 실행 화면](https://raw.githubusercontent.com/Winebug/3D-Project/main/Assets/Img/2025-08-13%2011%2055%2048.jpg)
 
 # **게임 소개**
 
